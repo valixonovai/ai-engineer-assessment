@@ -23,7 +23,10 @@ Fine-tuning usuli: LoRA / QLoRA (4-bit quantization). Adapter saqlash va keyin y
 
 ## Model ishlatish
 Colab link -->  https://colab.research.google.com/notebook#fileId=https%3A//huggingface.co/valixonov04/qwen-7b-kiberagent-full.ipynb
+
 Kaggle link -- > https://www.kaggle.com/code/valixonovilyosbek/notebook5359b1a2aa
+
+
 huggingface Transformer : 
 ```
 from transformers import AutoTokenizer, AutoModelForCausalLM
