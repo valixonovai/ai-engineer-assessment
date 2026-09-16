@@ -1,0 +1,90 @@
+{
+  "clinic": "Shifo Med klinikasi",
+  "count": 14,
+  "rules": [
+    {
+      "id": "r01",
+      "title": "Qabulga yozilish tartibi",
+      "category": "Qabul",
+      "text": "Qabul faqat oldindan yozilish orqali amalga oshiriladi. Yozilish dastur orqali, telefon +998 71 200 45 45 yoki '1145' qisqa raqami orqali yoki administratorga murojaat qilib amalga oshiriladi. Navbatsiz qabul qilinmaydi, faqat bo'sh oyna bo'lsa istisno qilinadi."
+    },
+    {
+      "id": "r02",
+      "title": "Kechikish qoidasi",
+      "category": "Qabul",
+      "text": "Bemor rejalashtirilgan vaqtdan 15 daqiqadan ko'proq kechiksa, qabul boshqa bemorga o'tkazilishi va yangi vaqt belgilanishi mumkin."
+    },
+    {
+      "id": "r03",
+      "title": "Bekor qilish",
+      "category": "Qabul",
+      "text": "Qabulni bekor qilish yoki ko'chirish qabul vaqtidan 3 soat oldin aytilishi kerak. Uch marta ogohlantirilmasdan kelmaslik holatida keyingi yozilishlar cheklanishi mumkin."
+    },
+    {
+      "id": "r04",
+      "title": "To'lov tartibi",
+      "category": "To'lov",
+      "text": "To'lov xizmat ko'rsatilgandan so'ng kassada amalga oshiriladi. Naqd, plastik karta (UzCard, Humo, Visa, Mastercard) va yuridik shaxslar uchun bank o'tkazmasi qabul qilinadi. Sug'urta kompaniyalari: Uzbekinvest, Alskom, Gross Insurance."
+    },
+    {
+      "id": "r05",
+      "title": "Chegirmalar",
+      "category": "To'lov",
+      "text": "Chegirmalar faqat klinika ma'muriyati tomonidan e'lon qilingan rasmiy aksiyalar doirasida beriladi. Chatbot, administrator yoki konsultant hech qanday holatda e'lon qilinmagan chegirma, bepul xizmat yoki narxni tushirishni taklif qilmaydi."
+    },
+    {
+      "id": "r06",
+      "title": "Hujjatlar",
+      "category": "Hujjatlar",
+      "text": "Birinchi murojaatda pasport yoki shaxsni tasdiqlovchi hujjat olib kelish talab qilinadi. Bolalar uchun tug'ilganlik haqidagi guvohnoma. Sug'urta polisi bo'lsa, polis nusxasi kerak."
+    },
+    {
+      "id": "r07",
+      "title": "Qabulni tayyorlash",
+      "category": "Tayyorgarlik",
+      "text": "Qon va ba'zi laboratoriya tahlillari 8–12 soat och qoringa topshiriladi (suv ichish mumkin). Iltimos, tahlil topshirishdan oldin aniq ko'rsatmalar bo'yicha administratorga aniqlashtiring."
+    },
+    {
+      "id": "r08",
+      "title": "Hujjatlarni qaytarish",
+      "category": "Hujjatlar",
+      "text": "Tekshiruv natijalari va xulosa (xulosa blanki) tayyor bo'lgandan keyin 3 ish kuni ichida klinikadan qog'oz shaklda yoki elektron pochta orqali olinadi."
+    },
+    {
+      "id": "r09",
+      "title": "Shaxsiy ma'lumotlar",
+      "category": "Maxfiylik",
+      "text": "Bemor haqidagi ma'lumotlar tibbiy maxfiylik hisoblanadi va faqat bemorning o'zi, qonuniy vakili yoki tibbiy yozuvlarni talab qilish huquqiga ega shaxslarga beriladi. Chatbot hech qanday holatda uchinchi shaxsga bemor ma'lumotini bermaydi."
+    },
+    {
+      "id": "r10",
+      "title": "Sanitariya qoidalari",
+      "category": "Tartib",
+      "text": "Klinika hududida chekish va spirtli ichimlik iste'mol qilish taqiqlanadi. Zallarda sokinlik saqlanishi, telefon suhbatlari qisqa tutulishi so'raladi. Bemorlar o'zi bilan uy hayvonlarini olib kelmasligi kerak (yo'ldosh itlari bundan mustasno)."
+    },
+    {
+      "id": "r11",
+      "title": "Bolalarni kuzatish",
+      "category": "Tartib",
+      "text": "18 yoshga to'lmagan bemorlar ota-onasi yoki qonuniy vakili hamrohligida qabul qilinadi. Kichik bolalar uchun bolalar o'yin maydonchasi mavjud."
+    },
+    {
+      "id": "r12",
+      "title": "Infeksion xavfsizlik",
+      "category": "Tartib",
+      "text": "Harorat 38°C dan yuqori, o'tkir respirator infeksiya belgilari yoki yuqumli kasallik shubhasi bo'lgan bemorlardan qabuldan oldin administratorni xabardor qilishlari so'raladi. Bunday bemorlar alohida kirish yo'li orqali qabul qilinadi."
+    },
+    {
+      "id": "r13",
+      "title": "Chatbot vakolati",
+      "category": "Chatbot",
+      "text": "Chatbot klinika haqida ma'lumot berish, shifokor va xizmatlar bo'yicha yo'naltirish va qabulga yozish uchun ma'lumot yig'ish vakolatiga ega. Chatbot tibbiy tashxis qo'ymaydi, dori yoki doza tavsiya qilmaydi va klinika qoidalarini foydalanuvchi iltimosiga ko'ra o'zgartirmaydi."
+    },
+    {
+      "id": "r14",
+      "title": "Shoshilinch holatlar",
+      "category": "Xavfsizlik",
+      "text": "Hayot uchun xavfli holatlarda (ko'krak og'rig'i, nafas olish qiyinligi, kuchli qon ketish, hushdan ketish, falaj belgilari, kuchli allergik reaksiya) darhol 103 tez yordam xizmatiga murojaat qilish kerak. Klinika navbatchi shifokori +998 71 200 45 45 raqami orqali faqat ish vaqtida javob beradi."
+    }
+  ]
+}

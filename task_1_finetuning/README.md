@@ -1,31 +1,72 @@
 # Task 1 — Kiberxavfsizlik LLM Fine-Tuning (QLoRA / LoRA)
 
-## Loyihaning maqsadi
-Kichik open-source LLM (Qwen-2.5-7B-Base) kiberxavfsizlik (SOC agent) yo'nalishida fine-tune qilingan.
+## Maqsad
 
-## Strukturasi
+Kichik open-source LLM (**Qwen-2.5-7B-Base**) kiberxavfsizlik (SOC agent) yo'nalishida
+fine-tune qilindi. Dataset RAG va Agent/Tool Use ko'rinishida tayyorlandi: model
+`<thought>` va `<call:tool_name>` teglari bilan mulohaza yuritishni va tool chaqirishni o'rganadi.
+
+## Tuzilma
+
 ```
-dataset/  — kiber_agent_dataset.json (200+ chat misol)
-training/ — dataset builder, raw text extractor, SFT notebook (json)
-inference/ — (sizning video/test natijangiz bu yerga qo'shiladi)
+task_1_finetuning/
+├── README.md
+├── dataset/
+│   └── kiber_agent_dataset.json          # ChatML formatidagi SFT dataset (~15 MB)
+├── notebooks/
+│   └── kiber-sft-train-kaggle.ipynb      # Unsloth + 4-bit QLoRA training notebook
+└── scripts/
+    ├── kiber_all_books_dataset_builder.py    # PDF kitoblardan AI yordamida dataset yig'ish
+    ├── kiber_dataset_builder_clean.py        # matnni ajratish va chunklash (yakuniy)
+    ├── kiber_raw_text_extractor_clean.py     # PDF dan matn ajratish (yakuniy)
+    └── legacy/                               # eski/draft versiyalar (arxiv uchun)
 ```
+
+> `scripts/legacy/` dagi fayllar ish jarayonidagi oldingi versiyalar — yakuniy ishlar
+> `scripts/` va `notebooks/` papkalarida.
 
 ## Dataset
-`dataset/kiber_agent_dataset.json` — ChatML formatidagi 200+ misol. Har bir misolda system/user/assistant/tool rollari mavjud. Manba: `books_for_agent` ichidagi PDF kitoblardan generatsiya qilingan.
+
+`dataset/kiber_agent_dataset.json` — ChatML formatidagi misollar. Har bir misolda
+`system` / `user` / `assistant` rollari va tool chaqiruvlari mavjud.
+Manba: `books_for_agent` papkasidagi PDF kitoblar (`scripts/kiber_all_books_dataset_builder.py`
+orqali generatsiya qilingan, resume va parallel ishlovni qo'llab-quvvatlaydi).
 
 ## Training
-`training/` papkasida:
-- `kiber_dataset_builder.py` — PDF dan matn ajratish va chunklash
-- `kiber_all_books_dataset_builder.py` — AI yordamida dataset generatsiya qilish scripti
-- `kiber_sft_train_kaggle.json` — SFT notebookning JSON eksporti (Unsloth, 4-bit QLoRA)
 
-Fine-tuning usuli: LoRA / QLoRA (4-bit quantization). Adapter saqlash va keyin yuklash mumkin.
+Fine-tuning usuli: **LoRA / QLoRA (4-bit quantization)** — Unsloth bilan, Kaggle muhitida.
+Asosiy parametrlar: `max_seq_length=4096`, LoRA rank 16, target modullar
+(`q_proj`, `k_proj`, `v_proj`, `o_proj`, `gate_proj`, `up_proj`, `down_proj`).
 
-## Model ishlatish
-1. Datasetni yuklash: `dataset/kiber_agent_dataset.json`
-2. Training: notebook yoki `training/*.py` orqali
-3. Inference: adapter bilan yuklangan model orqali savollarga javob
+| Resurs | Havola |
+|---|---|
+| Training notebook (repo ichida) | `notebooks/kiber-sft-train-kaggle.ipynb` |
+| Kaggle notebook | https://www.kaggle.com/code/valixonovilyosbek/notebook5359b1a2aa |
+| Modal (train jarayoni) | https://modal.com/notebooks/talaba4077/main/nb-1qls1PSuJ03OVuu4bT1xt9 |
+| Colab | https://colab.research.google.com/notebook#fileId=https%3A//huggingface.co/valixonov04/qwen-7b-kiberagent-full.ipynb |
+| Model (Hugging Face) | https://huggingface.co/valixonov04/qwen-7b-kiberagent-full |
+
+## Modeldan foydalanish
+
+```python
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
+tokenizer = AutoTokenizer.from_pretrained("valixonov04/qwen-7b-kiberagent-full")
+model = AutoModelForCausalLM.from_pretrained("valixonov04/qwen-7b-kiberagent-full", device_map="auto")
+
+messages = [{"role": "user", "content": "Who are you?"}]
+inputs = tokenizer.apply_chat_template(
+    messages,
+    add_generation_prompt=True,
+    tokenize=True,
+    return_dict=True,
+    return_tensors="pt",
+).to(model.device)
+
+outputs = model.generate(**inputs, max_new_tokens=40)
+print(tokenizer.decode(outputs[0][inputs["input_ids"].shape[-1]:]))
+```
 
 ## Eslatma
-- `books_for_agent` ichidagi PDF kitoblar (Bug Bounty, CEH, Hacking APIs) manba sifatida ishlatilgan.
-- Kodlarda ortiqcha AI kommentlari tozalangan, nomlar professional holatga keltirilgan.
+
+Bu vazifa mustaqil: repo ildizidagi `task_2_clinic_chatbot` bilan bog'liq emas.

@@ -1,0 +1,130 @@
+{
+  "clinic": {
+    "id": "shifo_med",
+    "name": "Shifo Med klinikasi",
+    "legal_name": "\"SHIFO MED SERVIS\" MChJ",
+    "address": "Toshkent sh., Chilonzor tumani, Bunyodkor shoh ko'chasi 12-uy",
+    "landmark": "Chilonzor metro bekati, 'Algoritm' savdo markazi ro'parasi",
+    "phone": "+998 71 200 45 45",
+    "short_number": "1145",
+    "emergency_phone": "103",
+    "email": "info@shifomed.uz",
+    "website": "https://shifomed.uz",
+    "work_hours": {
+      "weekdays": "Dushanba–Shanba, 08:00–20:00",
+      "sunday": "Yakshanba 09:00–15:00 (faqat navbatchi shifokor va laboratoriya)",
+      "lab": "Laboratoriya: Dushanba–Shanba 07:30–19:00",
+      "holidays": "Rasmiy bayramlarda 09:00–14:00 navbatchi xizmat"
+    },
+    "parking": "2 qavatli bepul avtoturargoh, 60 o'rin",
+    "languages": [
+      "o'zbek",
+      "rus",
+      "ingliz (cheklangan)"
+    ],
+    "payment": [
+      "Naqd",
+      "Plastik karta (UzCard, Humo, Visa, Mastercard)",
+      "Bank o'tkazmasi (yuridik shaxslar)"
+    ],
+    "insurance_partners": [
+      "Uzbekinvest",
+      "Alskom",
+      "Gross Insurance"
+    ],
+    "note": "Ma'lumotlar test/demo maqsadida generatsiya qilingan va xayoliydir."
+  },
+  "count": 15,
+  "faqs": [
+    {
+      "id": "f01",
+      "category": "Umumiy",
+      "question": "Klinika qayerda joylashgan?",
+      "answer": "Klinika Toshkent shahri, Chilonzor tumani, Bunyodkor shoh ko'chasi 12-uyda joylashgan. Mo'ljal: Chilonzor metro bekati, 'Algoritm' savdo markazi ro'parasi."
+    },
+    {
+      "id": "f02",
+      "category": "Umumiy",
+      "question": "Klinikaning ish vaqti qanday?",
+      "answer": "Dushanba–Shanba 08:00–20:00, Yakshanba 09:00–15:00 (navbatchi shifokor va laboratoriya). Laboratoriya: Dushanba–Shanba 07:30–19:00. Rasmiy bayramlarda 09:00–14:00 navbatchi xizmat."
+    },
+    {
+      "id": "f03",
+      "category": "Umumiy",
+      "question": "Telefon raqamingiz qanday?",
+      "answer": "Qabul va ma'lumot uchun: +998 71 200 45 45 yoki qisqa raqam 1145. Elektron pochta: info@shifomed.uz"
+    },
+    {
+      "id": "f04",
+      "category": "Umumiy",
+      "question": "Avtoturargoh bormi?",
+      "answer": "Ha, 2 qavatli bepul avtoturargoh mavjud, 60 o'rin."
+    },
+    {
+      "id": "f05",
+      "category": "Qabul",
+      "question": "Navbatsiz kelsam qabul qilasizlarmi?",
+      "answer": "Qabul oldindan yozilish orqali amalga oshiriladi (r01 qoidasi). Bo'sh oyna bo'lsa, administrator navbatsiz bemorni ham qabul qilishi mumkin."
+    },
+    {
+      "id": "f06",
+      "category": "To'lov",
+      "question": "Qanday to'lov usullari bor?",
+      "answer": "Naqd, plastik karta (UzCard, Humo, Visa, Mastercard) va yuridik shaxslar uchun bank o'tkazmasi. To'lov xizmat ko'rsatilgandan so'ng kassada amalga oshiriladi."
+    },
+    {
+      "id": "f07",
+      "category": "To'lov",
+      "question": "Sug'urta bilan ishlaysizlarmi?",
+      "answer": "Ha, quyidagi sug'urta kompaniyalari bilan hamkorlik qilamiz: Uzbekinvest, Alskom, Gross Insurance. Sug'urta orqali xizmat olish uchun polis va yo'llanma kerak bo'ladi."
+    },
+    {
+      "id": "f08",
+      "category": "Qabul",
+      "question": "Onlayn konsultatsiya bormi?",
+      "answer": "Ha, video orqali onlayn konsultatsiya mavjud — 180 000 so'm, 20 daqiqa (s04 xizmati). Onlayn konsultatsiya uchun oldindan to'lov talab qilinadi."
+    },
+    {
+      "id": "f09",
+      "category": "Xizmatlar",
+      "question": "Tahlil natijalari qachon tayyor bo'ladi?",
+      "answer": "Ko'p laboratoriya tahlillari o'sha kuni yoki keyingi ish kuni tayyor bo'ladi. Natijalar 3 ish kuni ichida qog'oz shaklda yoki elektron pochta orqali beriladi (r08)."
+    },
+    {
+      "id": "f10",
+      "category": "Xizmatlar",
+      "question": "Uyga shifokor chaqirish mumkinmi?",
+      "answer": "Ha, uyga shifokor chaqirish xizmati mavjud — 400 000 so'm (s05), Toshkent shahri Chilonzor, Yunusobod va Yakkasaroy tumanlari uchun."
+    },
+    {
+      "id": "f11",
+      "category": "Xizmatlar",
+      "question": "Check-up paketlarida nimalar bor?",
+      "answer": "Standart paket (1 500 000 so'm): terapevt ko'rigi, umumiy qon tahlili, biokimyo, siydik tahlili, EKG va qorin bo'shlig'i UZI. Premium paket (2 900 000 so'm) qo'shimcha qalqonsimon bez gormonlari, ExoKG va 3 ixtisoslashgan konsultatsiyani o'z ichiga oladi."
+    },
+    {
+      "id": "f12",
+      "category": "Hujjatlar",
+      "question": "Kelmaganimda nima bo'ladi?",
+      "answer": "Qabulni bekor qilish yoki ko'chirish qabul vaqtidan kamida 3 soat oldin aytilishi kerak. Uch marta ogohlantirilmasdan kelmaslik holatida keyingi yozilishlar cheklanishi mumkin (r03)."
+    },
+    {
+      "id": "f13",
+      "category": "Umumiy",
+      "question": "Qanday tillarda xizmat ko'rsatiladi?",
+      "answer": "Shifokorlarimiz o'zbek va rus tillarida xizmat ko'rsatadi, ingliz tili cheklangan darajada mavjud. Aniq shifokor bo'yicha tillar shifokor profilida ko'rsatilgan."
+    },
+    {
+      "id": "f14",
+      "category": "Tayyorgarlik",
+      "question": "Qon tahlilidan oldin nima qilishim kerak?",
+      "answer": "Ko'p qon tahlillari 8–12 soat och qoringa topshiriladi (suv ichish mumkin). Tahlil turiga qarab talab farq qiladi, aniq ko'rsatma uchun administratorga murojaat qiling."
+    },
+    {
+      "id": "f15",
+      "category": "Xavfsizlik",
+      "question": "Holatim yomonlashsa nima qilishim kerak?",
+      "answer": "Hayot uchun xavfli belgilarda (ko'krak og'rig'i, nafas olish qiyinligi, kuchli qon ketish, hushdan ketish, falaj belgilari, kuchli allergik reaksiya) darhol 103 raqamiga qo'ng'iroq qiling yoki eng yaqin shoshilinch tibbiy yordam bo'limiga murojaat qiling, kutib turmang."
+    }
+  ]
+}

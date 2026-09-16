@@ -1,0 +1,411 @@
+{
+  "clinic": {
+    "id": "shifo_med",
+    "name": "Shifo Med klinikasi",
+    "legal_name": "\"SHIFO MED SERVIS\" MChJ",
+    "address": "Toshkent sh., Chilonzor tumani, Bunyodkor shoh ko'chasi 12-uy",
+    "landmark": "Chilonzor metro bekati, 'Algoritm' savdo markazi ro'parasi",
+    "phone": "+998 71 200 45 45",
+    "short_number": "1145",
+    "emergency_phone": "103",
+    "email": "info@shifomed.uz",
+    "website": "https://shifomed.uz",
+    "work_hours": {
+      "weekdays": "Dushanba–Shanba, 08:00–20:00",
+      "sunday": "Yakshanba 09:00–15:00 (faqat navbatchi shifokor va laboratoriya)",
+      "lab": "Laboratoriya: Dushanba–Shanba 07:30–19:00",
+      "holidays": "Rasmiy bayramlarda 09:00–14:00 navbatchi xizmat"
+    },
+    "parking": "2 qavatli bepul avtoturargoh, 60 o'rin",
+    "languages": [
+      "o'zbek",
+      "rus",
+      "ingliz (cheklangan)"
+    ],
+    "payment": [
+      "Naqd",
+      "Plastik karta (UzCard, Humo, Visa, Mastercard)",
+      "Bank o'tkazmasi (yuridik shaxslar)"
+    ],
+    "insurance_partners": [
+      "Uzbekinvest",
+      "Alskom",
+      "Gross Insurance"
+    ],
+    "note": "Ma'lumotlar test/demo maqsadida generatsiya qilingan va xayoliydir."
+  },
+  "count": 12,
+  "doctors": [
+    {
+      "id": "d01",
+      "full_name": "Aziz Karimov",
+      "specialty": "Kardiolog",
+      "degree": "Oliy toifali shifokor, tibbiyot fanlari nomzodi",
+      "experience_years": 18,
+      "room": "204-xona, 2-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Seshanba",
+          "Chorshanba",
+          "Juma"
+        ],
+        "time": "09:00–14:00"
+      },
+      "consultation_price_uzs": 250000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2007), kardiologiya ordinaturasi (2009)",
+      "about": "Yurak-qon tomir kasalliklari, arterial gipertenziya, yurak ishemik kasalligi va yurak yetishmovchiligini diagnostika qilish va kuzatish bilan shug'ullanadi. EKG, ExoKG va 24 soatlik Xolter monitoringi natijalarini tahlil qiladi.",
+      "procedures": [
+        "Konsultatsiya",
+        "EKG tahlili",
+        "ExoKG (yurak UZI)",
+        "Xolter monitoringi"
+      ]
+    },
+    {
+      "id": "d02",
+      "full_name": "Nilufar Rahimova",
+      "specialty": "Nevrolog",
+      "degree": "Birinchi toifali shifokor",
+      "experience_years": 12,
+      "room": "206-xona, 2-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Chorshanba",
+          "Payshanba",
+          "Shanba"
+        ],
+        "time": "10:00–16:00"
+      },
+      "consultation_price_uzs": 230000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent pediatriya tibbiyot instituti (2013), nevrologiya ordinaturasi (2015)",
+      "about": "Bosh og'rig'i, migren, uyqu buzilishi, bel va bo'yin umurtqasi og'riqlari, nevropatiya va stress bilan bog'liq holatlarni kuzatadi.",
+      "procedures": [
+        "Konsultatsiya",
+        "Migren diagnostikasi",
+        "Uyqu sifatini baholash"
+      ]
+    },
+    {
+      "id": "d03",
+      "full_name": "Bekzod Yusupov",
+      "specialty": "Stomatolog-terapevt",
+      "degree": "Oliy toifali shifokor",
+      "experience_years": 15,
+      "room": "108-xona, 1-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Seshanba",
+          "Chorshanba",
+          "Payshanba",
+          "Juma",
+          "Shanba"
+        ],
+        "time": "08:00–13:00"
+      },
+      "consultation_price_uzs": 180000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus",
+        "ingliz"
+      ],
+      "education": "Toshkent davlat stomatologiya instituti (2010)",
+      "about": "Kariesni davolash, kanal davolash, tish tozalash va estetik plombalash. Og'riqsiz davolash (sedatsiya) bo'yicha malaka oshirgan.",
+      "procedures": [
+        "Konsultatsiya",
+        "Kariesni davolash",
+        "Kanal davolash",
+        "Tish tozalash (ultratovush)",
+        "Plombalash"
+      ]
+    },
+    {
+      "id": "d04",
+      "full_name": "Dilnoza Ergasheva",
+      "specialty": "Pediatr",
+      "degree": "Oliy toifali shifokor",
+      "experience_years": 20,
+      "room": "112-xona, 1-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Seshanba",
+          "Chorshanba",
+          "Payshanba",
+          "Juma"
+        ],
+        "time": "08:30–14:00"
+      },
+      "consultation_price_uzs": 200000,
+      "accepts_children": true,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent pediatriya tibbiyot instituti (2005)",
+      "about": "0 yoshdan 18 yoshgacha bolalarni kuzatish: o'sish va rivojlanish, emlash kalendari, tez-tez kasallanish, ovqatlanish va vitamin yetishmovchiligi masalalari.",
+      "procedures": [
+        "Konsultatsiya",
+        "Emlash rejasini tuzish",
+        "O'sish-rivojlanish monitoringi"
+      ]
+    },
+    {
+      "id": "d05",
+      "full_name": "Sardor Toshpo'latov",
+      "specialty": "Travmatolog-ortoped",
+      "degree": "Birinchi toifali shifokor",
+      "experience_years": 11,
+      "room": "202-xona, 2-qavat",
+      "schedule": {
+        "days": [
+          "Seshanba",
+          "Payshanba",
+          "Shanba"
+        ],
+        "time": "11:00–17:00"
+      },
+      "consultation_price_uzs": 240000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2014), travmatologiya ordinaturasi (2016)",
+      "about": "Suyak sinishi, cho'kish va burilishlar, bo'g'im og'riqlari, umurtqa va tizza bo'g'imi muammolari, gips va immobilizatsiya.",
+      "procedures": [
+        "Konsultatsiya",
+        "Gips qo'yish",
+        "Bo'g'im blokadasi",
+        "Rentgen tahlili"
+      ]
+    },
+    {
+      "id": "d06",
+      "full_name": "Kamola Ismoilova",
+      "specialty": "Dermatolog",
+      "degree": "Birinchi toifali shifokor",
+      "experience_years": 9,
+      "room": "110-xona, 1-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Chorshanba",
+          "Juma"
+        ],
+        "time": "13:00–19:00"
+      },
+      "consultation_price_uzs": 220000,
+      "accepts_children": true,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2016), dermatovenerologiya ordinaturasi (2018)",
+      "about": "Teri toshmalari, akne, allergik dermatit, zamburug'li kasalliklar va soch to'kilishi bilan shug'ullanadi.",
+      "procedures": [
+        "Konsultatsiya",
+        "Dermoskopiya",
+        "Zamburug' tahlili uchun namuna olish"
+      ]
+    },
+    {
+      "id": "d07",
+      "full_name": "Rustam Abdullayev",
+      "specialty": "Urolog",
+      "degree": "Oliy toifali shifokor",
+      "experience_years": 22,
+      "room": "208-xona, 2-qavat",
+      "schedule": {
+        "days": [
+          "Seshanba",
+          "Payshanba",
+          "Shanba"
+        ],
+        "time": "09:00–14:00"
+      },
+      "consultation_price_uzs": 260000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2003), urologiya ordinaturasi (2005)",
+      "about": "Buyrak va siydik yo'li toshlari, prostata kasalliklari, siydik chiqarish buzilishlari va infeksiyalari.",
+      "procedures": [
+        "Konsultatsiya",
+        "Siydik tahlili talqini",
+        "Buyrak UZI",
+        "Kistoskopiya (yo'llanma bilan)"
+      ]
+    },
+    {
+      "id": "d08",
+      "full_name": "Zarina Mahmudova",
+      "specialty": "Ginekolog",
+      "degree": "Oliy toifali shifokor, tibbiyot fanlari nomzodi",
+      "experience_years": 19,
+      "room": "210-xona, 2-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Seshanba",
+          "Chorshanba",
+          "Payshanba",
+          "Juma"
+        ],
+        "time": "09:00–15:00"
+      },
+      "consultation_price_uzs": 250000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus",
+        "ingliz"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2006), akusherlik-ginekologiya ordinaturasi (2008)",
+      "about": "Ayollar salomatligi, homiladorlikni rejalashtirish va kuzatish, ginekologik tekshiruvlar va profilaktika.",
+      "procedures": [
+        "Konsultatsiya",
+        "Kolposkopiya",
+        "Kichik chanoq UZI",
+        "Homiladorlik monitoringi"
+      ]
+    },
+    {
+      "id": "d09",
+      "full_name": "Jasur Nazarov",
+      "specialty": "LOR (otorinolaringolog)",
+      "degree": "Birinchi toifali shifokor",
+      "experience_years": 10,
+      "room": "106-xona, 1-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Seshanba",
+          "Chorshanba",
+          "Juma",
+          "Shanba"
+        ],
+        "time": "08:00–13:00"
+      },
+      "consultation_price_uzs": 190000,
+      "accepts_children": true,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2015)",
+      "about": "Quloq, tomoq va burun kasalliklari: gaymorit, otit, tonzillit, burun bitishi va eshitish pasayishi.",
+      "procedures": [
+        "Konsultatsiya",
+        "Endoskopik tekshiruv",
+        "Burun yuvish",
+        "Quloqni tozalash"
+      ]
+    },
+    {
+      "id": "d10",
+      "full_name": "Malika Sobirova",
+      "specialty": "Endokrinolog",
+      "degree": "Oliy toifali shifokor",
+      "experience_years": 14,
+      "room": "212-xona, 2-qavat",
+      "schedule": {
+        "days": [
+          "Seshanba",
+          "Payshanba",
+          "Shanba"
+        ],
+        "time": "10:00–16:00"
+      },
+      "consultation_price_uzs": 240000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2011), endokrinologiya ordinaturasi (2013)",
+      "about": "Qalqonsimon bez kasalliklari, qandli diabet (2-tur), vazn va modda almashinuvi buzilishlari, gormonal ko'rsatkichlarni talqin qilish.",
+      "procedures": [
+        "Konsultatsiya",
+        "Qalqonsimon bez UZI",
+        "Gormonal tahlil talqini"
+      ]
+    },
+    {
+      "id": "d11",
+      "full_name": "Otabek Xolmatov",
+      "specialty": "Gastroenterolog",
+      "degree": "Birinchi toifali shifokor",
+      "experience_years": 13,
+      "room": "214-xona, 2-qavat",
+      "schedule": {
+        "days": [
+          "Dushanba",
+          "Chorshanba",
+          "Payshanba",
+          "Shanba"
+        ],
+        "time": "09:30–15:00"
+      },
+      "consultation_price_uzs": 235000,
+      "accepts_children": false,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2012)",
+      "about": "Oshqozon va ichak kasalliklari, gastrit, kolit, jigar va o't pufagi muammolari, FGDS natijalarini talqin qilish.",
+      "procedures": [
+        "Konsultatsiya",
+        "FGDS talqini",
+        "Qorin bo'shlig'i UZI talqini"
+      ]
+    },
+    {
+      "id": "d12",
+      "full_name": "Sevara Qodirova",
+      "specialty": "Oftalmolog",
+      "degree": "Birinchi toifali shifokor",
+      "experience_years": 8,
+      "room": "104-xona, 1-qavat",
+      "schedule": {
+        "days": [
+          "Seshanba",
+          "Chorshanba",
+          "Payshanba",
+          "Juma"
+        ],
+        "time": "11:00–17:00"
+      },
+      "consultation_price_uzs": 210000,
+      "accepts_children": true,
+      "languages": [
+        "o'zbek",
+        "rus"
+      ],
+      "education": "Toshkent tibbiyot akademiyasi (2017)",
+      "about": "Ko'z o'tkirligini tekshirish, ko'zoynak tanlash, kon'yunktivit, glaukoma va katarakta shubhalarini baholash.",
+      "procedures": [
+        "Konsultatsiya",
+        "Ko'rish o'tkirligini tekshirish",
+        "Ko'z ichki bosimini o'lchash",
+        "Ko'z tubini ko'rish"
+      ]
+    }
+  ]
+}

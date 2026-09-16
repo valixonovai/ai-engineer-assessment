@@ -1,0 +1,247 @@
+{
+  "clinic": "Shifo Med klinikasi",
+  "currency": "UZS",
+  "price_note": "Narxlar 2026-yil uchun ko'rsatilgan va o'zgarishi mumkin. Aniq narx administrator orqali tasdiqlanadi.",
+  "count": 31,
+  "services": [
+    {
+      "id": "s01",
+      "name": "Birlamchi konsultatsiya (ixtisoslashgan shifokor)",
+      "category": "Konsultatsiya",
+      "price_uzs": 250000,
+      "duration_min": 30,
+      "note": "Shifokor ixtisosligiga qarab 180 000–260 000 so'm"
+    },
+    {
+      "id": "s02",
+      "name": "Takroriy konsultatsiya (30 kun ichida)",
+      "category": "Konsultatsiya",
+      "price_uzs": 150000,
+      "duration_min": 20,
+      "note": "O'sha shifokorga qayta murojaat"
+    },
+    {
+      "id": "s03",
+      "name": "Pediatr konsultatsiyasi",
+      "category": "Konsultatsiya",
+      "price_uzs": 200000,
+      "duration_min": 30,
+      "note": "0–18 yosh"
+    },
+    {
+      "id": "s04",
+      "name": "Onlayn konsultatsiya (video)",
+      "category": "Konsultatsiya",
+      "price_uzs": 180000,
+      "duration_min": 20,
+      "note": "Oldindan to'lov talab qilinadi"
+    },
+    {
+      "id": "s05",
+      "name": "Uyga shifokor chaqirish (Toshkent sh. ichida)",
+      "category": "Konsultatsiya",
+      "price_uzs": 400000,
+      "duration_min": 45,
+      "note": "Chilonzor, Yunusobod, Yakkasaroy tumanlari"
+    },
+    {
+      "id": "s10",
+      "name": "Umumiy qon tahlili (KLA)",
+      "category": "Laboratoriya",
+      "price_uzs": 90000,
+      "duration_min": 10,
+      "preparation": "8–12 soat och qoringa (suv ichish mumkin)"
+    },
+    {
+      "id": "s11",
+      "name": "Qon shakari (glyukoza)",
+      "category": "Laboratoriya",
+      "price_uzs": 60000,
+      "duration_min": 10,
+      "preparation": "8–12 soat och qoringa"
+    },
+    {
+      "id": "s12",
+      "name": "Biokimyoviy qon tahlili (12 ko'rsatkich)",
+      "category": "Laboratoriya",
+      "price_uzs": 280000,
+      "duration_min": 15,
+      "preparation": "8–12 soat och qoringa"
+    },
+    {
+      "id": "s13",
+      "name": "Qalqonsimon bez gormonlari (TSH, T3, T4)",
+      "category": "Laboratoriya",
+      "price_uzs": 320000,
+      "duration_min": 15,
+      "preparation": "Ertalab, och qoringa"
+    },
+    {
+      "id": "s14",
+      "name": "Umumiy siydik tahlili",
+      "category": "Laboratoriya",
+      "price_uzs": 70000,
+      "duration_min": 10,
+      "preparation": "Ertalabki siydik, toza idishda"
+    },
+    {
+      "id": "s15",
+      "name": "EKG (12 kanalli)",
+      "category": "Diagnostika",
+      "price_uzs": 120000,
+      "duration_min": 15
+    },
+    {
+      "id": "s16",
+      "name": "ExoKG (yurak UZI)",
+      "category": "Diagnostika",
+      "price_uzs": 300000,
+      "duration_min": 30
+    },
+    {
+      "id": "s17",
+      "name": "Xolter monitoringi (24 soat)",
+      "category": "Diagnostika",
+      "price_uzs": 450000,
+      "duration_min": 30,
+      "note": "Qurilma 24 soatga o'rnatiladi, keyingi kuni olinadi"
+    },
+    {
+      "id": "s18",
+      "name": "Qorin bo'shlig'i UZI (kompleks)",
+      "category": "Diagnostika",
+      "price_uzs": 280000,
+      "duration_min": 25,
+      "preparation": "6–8 soat och qoringa"
+    },
+    {
+      "id": "s19",
+      "name": "Buyrak va siydik yo'llari UZI",
+      "category": "Diagnostika",
+      "price_uzs": 250000,
+      "duration_min": 25,
+      "preparation": "Siydik pufagi to'la bo'lishi kerak"
+    },
+    {
+      "id": "s20",
+      "name": "Kichik chanoq UZI",
+      "category": "Diagnostika",
+      "price_uzs": 260000,
+      "duration_min": 25,
+      "preparation": "Siydik pufagi to'la bo'lishi kerak"
+    },
+    {
+      "id": "s21",
+      "name": "Qalqonsimon bez UZI",
+      "category": "Diagnostika",
+      "price_uzs": 220000,
+      "duration_min": 20
+    },
+    {
+      "id": "s22",
+      "name": "Rentgen (1 ta soha)",
+      "category": "Diagnostika",
+      "price_uzs": 150000,
+      "duration_min": 15,
+      "note": "Homiladorlikda taqiqlanadi"
+    },
+    {
+      "id": "s23",
+      "name": "FGDS (oshqozon-ichak endoskopiyasi)",
+      "category": "Diagnostika",
+      "price_uzs": 550000,
+      "duration_min": 40,
+      "preparation": "8–12 soat och qoringa; shifokor ko'rigidan keyin"
+    },
+    {
+      "id": "s30",
+      "name": "Kariesni davolash (1 tish)",
+      "category": "Stomatologiya",
+      "price_uzs": 450000,
+      "duration_min": 45,
+      "note": "Plomba turiga qarab 450 000–900 000 so'm"
+    },
+    {
+      "id": "s31",
+      "name": "Kanal davolash (1 kanal)",
+      "category": "Stomatologiya",
+      "price_uzs": 700000,
+      "duration_min": 60
+    },
+    {
+      "id": "s32",
+      "name": "Tish tozalash (ultratovush + polirovka)",
+      "category": "Stomatologiya",
+      "price_uzs": 420000,
+      "duration_min": 45
+    },
+    {
+      "id": "s33",
+      "name": "Tish olish (oddiy)",
+      "category": "Stomatologiya",
+      "price_uzs": 300000,
+      "duration_min": 30
+    },
+    {
+      "id": "s34",
+      "name": "Physiotherapy — magnit terapiya (1 seans)",
+      "category": "Muolaja",
+      "price_uzs": 120000,
+      "duration_min": 20
+    },
+    {
+      "id": "s35",
+      "name": "Massaj (tibbiy, 1 seans)",
+      "category": "Muolaja",
+      "price_uzs": 180000,
+      "duration_min": 40
+    },
+    {
+      "id": "s36",
+      "name": "Emizish/emlash (1 emlash)",
+      "category": "Muolaja",
+      "price_uzs": 130000,
+      "duration_min": 20,
+      "note": "Emlash kalendariga muvofiq"
+    },
+    {
+      "id": "s37",
+      "name": "Tomchilatib yuborish (kapelnitsa, shifokor ko'rigidan keyin)",
+      "category": "Muolaja",
+      "price_uzs": 200000,
+      "duration_min": 60,
+      "note": "Faqat shifokor ko'rigi va yo'llanmasi bilan"
+    },
+    {
+      "id": "s38",
+      "name": "Gips qo'yish",
+      "category": "Travmatologiya",
+      "price_uzs": 350000,
+      "duration_min": 40
+    },
+    {
+      "id": "s50",
+      "name": "Yillik check-up paketi (Standart)",
+      "category": "Paket",
+      "price_uzs": 1500000,
+      "duration_min": 180,
+      "note": "Terapevt ko'rigi + KLA + biokimyo + siydik tahlili + EKG + qorin UZI"
+    },
+    {
+      "id": "s51",
+      "name": "Yillik check-up paketi (Premium)",
+      "category": "Paket",
+      "price_uzs": 2900000,
+      "duration_min": 240,
+      "note": "Standart paket + qalqonsimon bez gormonlari + ExoKG + 3 ixtisoslashgan konsultatsiya"
+    },
+    {
+      "id": "s52",
+      "name": "Ayollar check-up paketi",
+      "category": "Paket",
+      "price_uzs": 1950000,
+      "duration_min": 210,
+      "note": "Ginekolog ko'rigi + kichik chanoq UZI + laboratoriya tahlillari + mammologiya yo'llanmasi"
+    }
+  ]
+}
