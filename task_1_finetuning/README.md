@@ -14,6 +14,10 @@ inference/ — (sizning video/test natijangiz bu yerga qo'shiladi)
 `dataset/kiber_agent_dataset.json` — ChatML formatidagi 200+ misol. Har bir misolda system/user/assistant/tool rollari mavjud. Manba: `books_for_agent` ichidagi PDF kitoblardan generatsiya qilingan.
 
 ## Training
+
+train jarayoni -- > https://modal.com/notebooks/talaba4077/main/nb-1qls1PSuJ03OVuu4bT1xt9
+
+
 `training/` papkasida:
 - `kiber_dataset_builder.py` — PDF dan matn ajratish va chunklash
 - `kiber_all_books_dataset_builder.py` — AI yordamida dataset generatsiya qilish scripti
