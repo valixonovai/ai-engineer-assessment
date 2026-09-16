@@ -22,10 +22,25 @@ inference/ — (sizning video/test natijangiz bu yerga qo'shiladi)
 Fine-tuning usuli: LoRA / QLoRA (4-bit quantization). Adapter saqlash va keyin yuklash mumkin.
 
 ## Model ishlatish
-1. Datasetni yuklash: `dataset/kiber_agent_dataset.json`
-2. Training: notebook yoki `training/*.py` orqali
-3. Inference: adapter bilan yuklangan model orqali savollarga javob
+Colab link -->  https://colab.research.google.com/notebook#fileId=https%3A//huggingface.co/valixonov04/qwen-7b-kiberagent-full.ipynb
+Kaggle link -- > https://www.kaggle.com/code/valixonovilyosbek/notebook5359b1a2aa
+huggingface Transformer : 
+```
+from transformers import AutoTokenizer, AutoModelForCausalLM
 
-## Eslatma
-- `books_for_agent` ichidagi PDF kitoblar (Bug Bounty, CEH, Hacking APIs) manba sifatida ishlatilgan.
-- Kodlarda ortiqcha AI kommentlari tozalangan, nomlar professional holatga keltirilgan.
+tokenizer = AutoTokenizer.from_pretrained("valixonov04/qwen-7b-kiberagent-full")
+model = AutoModelForCausalLM.from_pretrained("valixonov04/qwen-7b-kiberagent-full", device_map="auto")
+messages = [
+    {"role": "user", "content": "Who are you?"},
+]
+inputs = tokenizer.apply_chat_template(
+	messages,
+	add_generation_prompt=True,
+	tokenize=True,
+	return_dict=True,
+	return_tensors="pt",
+).to(model.device)
+
+outputs = model.generate(**inputs, max_new_tokens=40)
+print(tokenizer.decode(outputs[0][inputs["input_ids"].shape[-1]:]))
+```
