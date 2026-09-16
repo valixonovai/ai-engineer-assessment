@@ -60,7 +60,7 @@ cp .env.example .env             # Linux / macOS
 
 ```env
 LLM_PROVIDER=openai_compatible
-OPENAI_API_KEY=sk-or-v1-...        # kalitni https://openrouter.ai/keys dan olasiz
+OPENAI_API_KEY=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        # kalitni https://openrouter.ai/keys dan olasiz
 OPENAI_BASE_URL=https://openrouter.ai/api/v1
 LLM_MODEL=google/gemini-2.5-flash
 ```
